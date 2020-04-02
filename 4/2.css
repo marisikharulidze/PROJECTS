@@ -32,3 +32,22 @@
     border: solid 2px rgb(128, 128, 128);
     width: 100px;
 }
+.magida{
+    border: solid 2px rgb(128, 128, 128);
+    height: 650px;
+    width: 950px;
+    margin: auto;
+}
+.magida1 td{
+    border: solid 2px rgb(128, 128, 128);
+    height: 100px;
+}
+.magida2 td{
+    border: solid 2px rgb(128, 128, 128);
+    height: 20px;
+    width: 200px;
+}
+.magida3 td{
+    border: solid 2px rgb(128, 128, 128);
+    height: 250px;
+}
