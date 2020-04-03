@@ -16,12 +16,17 @@
 .t2 td{
     height: 0.5px;
     width: 200px;
+    background-color: rgb(150, 150, 150);
 }
 .t3 td{
     height: 60px;
+    background-color: rgb(150, 150, 150);
 }
 hr{
     height: 20px;
     width: 650px;
     background-color: grey;
+}
+.t4 td{
+    height: 40px;
 }
