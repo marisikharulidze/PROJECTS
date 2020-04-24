@@ -1,0 +1,61 @@
+.table{
+    border:solid 1px;
+    width: 950px;
+    height: 700px;
+    margin: auto;
+}
+.table td{
+    border: solid 1px
+}
+.t1{
+    background-color: rgb(13, 137, 153);
+}
+.t2{
+    background-color: rgb(229, 190, 155);
+}
+
+
+
+.table1{
+    border:solid 1px;
+    width: 950px;
+    height: 700px;
+    margin: auto;
+    position: relative;
+}
+.box1{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 400px;
+    top: 100px;
+    border: solid 1px;
+    background-color: red;
+}
+.box2{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 500px;
+    top: 200px;
+    border: solid 1px;
+    background-color: blue;
+}
+.box3{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 600px;
+    top: 300px;
+    border: solid 1px;
+    background-color: green;
+}
+.box4{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    left: 700px;
+    top: 400px;
+    border: solid 1px;
+    background-color:yellow;
+}
