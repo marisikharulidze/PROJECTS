@@ -1,0 +1,199 @@
+.head{
+    position: relative;
+    height: 110px;
+    background-color: black;
+    border: 2px solid;
+}
+.footer{
+    position: relative;
+    height: 90px;
+    background-color: black;
+    top: 780px;
+}
+.picture_frame{
+    border: 10px rgb(184, 184, 184) solid;
+    width: 880px;
+    height: 250px;
+    margin-top: 20px;
+}
+.divk{
+    width: 140px;
+    height: 30px;
+    border: solid black 1px;
+    position: absolute;
+    background-color: darkgray;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+    
+}
+.div1{
+    bottom: 0px;
+    right: 0px;
+    background-color: rgb(61, 61, 61);
+}
+.div2{
+    bottom: 0;
+    right: 150px;
+    background-color: rgb(61, 61, 61);
+}
+.div3{
+    bottom: 0px;
+    right: 300px;
+    background-color: rgb(61, 61, 61);
+}
+.div4{
+    bottom: 0px;
+    right: 450px;
+    background-color: rgb(61, 61, 61);
+}
+.div5{
+    bottom: 0px;
+    right: 600px;
+    background-color: rgb(37, 202, 37);
+}
+a{
+    color: white;
+}
+.div6{
+    width: 900px;
+    height: 90px;
+    color: yellow; 
+    position: absolute;
+    right: 338px;
+    bottom: 0px;   
+}
+section{
+    width: 900px;
+    min-height: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.p1{
+    font-size: 2em;
+    color: rgb(139, 139, 0);
+    margin-top: 12px;
+    margin-left: 350px;
+}
+.p2{
+    color: rgb(83, 83, 75);
+    margin-left: 350px;
+    margin-top: 2px;
+}
+section{
+    width: 900px;
+    min-height: 1000px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.text{
+    width: 63%;
+    left: 5px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: 22px;
+    
+}
+.ravi1{
+    position: absolute;
+    border: solid gray 1px;
+    right: 10px;
+    top: 150px;
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+}
+.ravi2{
+    position: absolute;
+    border: gray solid 1px;
+    right: 10px;
+    top: 410px;
+    height: 250px;
+    width: 200px;
+    border-radius: 20px;
+}
+.ravi3{
+    position: absolute;
+    border: gray solid 1px;
+    right: 10px;
+    top: 670px;
+    height: 125px;
+    width: 200px;
+    border-radius: 20px;
+}
+.ravi{
+    height: 20px;
+    width: 120px;
+    border: gray solid 1px;
+    color: gray;
+}
+
+.border{
+    border: solid 0px black;
+    margin-left: 350px;
+    height: 2200px;
+    width: 42%;
+    margin-top: 45px;
+}
+.footer2{
+    position: relative;
+    height: 90px;
+    background-color: black;
+}
+.border3{
+    border: solid 0px black;
+    margin-left: 350px;
+    height: 700px;
+    width: 42%;
+    margin-top: 45px;
+}
+.table{
+    border: 0px solid black;
+    height: 150px;
+    width: 500px;
+    background-color: rgb(252, 255, 233);
+}
+table td{
+    border: solid 0px;
+
+}
+.name{
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    right: 580px;
+    top: 280px;
+    border: solid black 1px;
+}
+.email{
+    height: 40px;
+    width: 250px;
+    position: absolute;
+    right: 580px;
+    top: 330px;
+    border: solid black 1px;
+}
+.message{
+    height:250px;
+    width: 250px;
+    position: absolute;
+    right: 580px;
+    top: 380px;
+    border: solid black 1px;
+}
+.submit{
+    height: 25px;
+    width: 80px;
+    border: solid 1px gray;
+    position: absolute;
+    left: 858px;
+    top: 650px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+}

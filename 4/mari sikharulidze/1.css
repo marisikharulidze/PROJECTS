@@ -1,0 +1,156 @@
+.border{
+    width: 1050px;
+    height: 90px;
+    border: solid 2px red;
+    background-color: rgb(236, 152, 77);
+    text-align: center;
+    border-top-right-radius: 130px;
+    border-bottom-left-radius: 130px;
+}
+
+
+
+
+
+.table{
+    border:2px red solid;
+    width: 800px;
+    height: 250px;
+}
+.table td{
+    border: 3px red solid;
+}
+
+
+
+
+
+.border1{
+    width:1050px;
+    height: 150px;
+    border: solid 1px rgb(37, 37, 37);
+    background-color: rgb(179, 179, 179);
+    position: relative;
+}
+.shape1{
+    width: 170px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    border: 6px red solid;
+    border-style: dashed;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+.shape2{
+    width: 170px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    border: 6px solid;
+    border-style: dashed solid dashed solid;
+    border-color: red yellow blue green;
+    margin-left: 500px;
+    margin-top: 20px;
+}
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    border-bottom: 50px solid rgb(199, 59, 17);
+    
+}
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+    border-top: 50px solid rgb(0, 0, 0);
+    margin-top: 22px;
+}
+.triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-right: 50px solid rgb(202, 19, 19);
+	border-bottom: 25px solid transparent;
+}
+.triangle-right {
+	width: 0;
+	height: 0;
+	border-top: 25px solid transparent;
+	border-left: 50px solid rgb(194, 155, 155);
+	border-bottom: 25px solid transparent;
+}
+
+
+
+
+.div{
+    height: 500px;
+    width: 1050px;
+    border: solid 2px black;
+    position: relative;
+    margin: auto;
+}
+.box1{
+    position: absolute;
+    left: 0px;
+    top:0px;
+    width: 150px;
+    height: 150px;
+    background-color: green;
+    border: solid black 3px;
+}
+.box2{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 150px;
+    height: 150px;
+    background-color: red;
+    border: solid black 3px;
+}
+.box3{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    border: solid black 3px;
+}
+.box4{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 150px;
+    height: 150px;
+    background-color: rgb(2, 2, 116);
+    border: solid black 3px;
+}
+.box5{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+    margin-top: 172px;
+    margin-left: 450px;
+    border: solid black 3px;
+}
+
+
+
+
+.button {
+    background-color:rgb(121, 121, 121);
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
