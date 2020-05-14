@@ -1,0 +1,98 @@
+.login{
+    border: 1px solid;
+    border-color: white white black black;
+    height: 430px;
+    width: 520px;
+    background-color: rgb(238, 238, 238);
+    position: relative;
+    padding: 5px;
+    top: 50px;
+}
+.xo{
+    width: 280px;
+    height: 37px;
+    padding: 8px;
+    position: absolute;
+    border-radius: 6px;
+    border: rgb(207, 207, 207) 1px solid;
+    font-size: 1em;
+    left: 120px;
+    top: 105px;
+}
+.aa{
+    color: blue;
+    margin-top: 295px;
+    position: absolute;
+    left: 160px;
+}
+
+
+
+
+.basic{
+    border: solid 1px;
+    height: 650px;
+    width: 700px;
+    padding: 13px;
+    position: relative;
+}
+.colorless{
+    border: 0px  solid;
+    height: 520px;
+    width: 135px;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.inputsBorder{
+    border: 0px solid;
+    height: 520px;
+    width: 540px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.inputs{
+    position: absolute;
+}
+
+
+
+
+
+
+
+.border{
+    border: solid 1px rgb(0, 218, 0);
+    background-color: rgb(226, 255, 224);
+    height: 550px;
+    width: 800px;
+    padding: 30px;
+    position: relative;
+}
+.ravi{
+    width: 340px;
+    height: 20px;
+    padding: 5px;
+    margin-right: 900px;
+    position: absolute;
+    left: 28px;
+    top: 36px;
+}
+.ravi1{
+    width: 340px;
+    height: 170px;
+    padding: 5px;
+    margin-right: 900px;
+    position: absolute;
+    left: 28px;
+    top: 36px;
+}
+.ragac{
+    border: solid black 0px;
+    width: 400px;
+    height: 430px;
+    position: relative;
+    text-align: left;
+    top: 25px;  
+}
