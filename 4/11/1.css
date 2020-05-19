@@ -77,24 +77,55 @@
 .box1{
     border: solid red 2px;
     width: 50px;
-    height: 50px;
+    height: 38px;
+    padding: 6px 0px;
     text-align: center;
     background-color: green;
     margin-left: 8px;
+    animation-name: animate1;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    font-size: 8px;
 }
 .box2{
     border: solid blue 2px;
     width: 50px;
-    height: 50px;
+    height: 38px;
+    padding: 6px 0px;
     text-align: center;
-    background-color: yellowgreen;
+    background-color: greenyellow;
     margin-left: 8px;
+    animation-name: animate2;
+    animation-duration: 3s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    font-size: 8px;
 }
 .box3{
     border: solid red 2px;
     width: 50px;
-    height: 50px;
+    height: 38px;
+    padding: 6px 0px;
     text-align: center;
     background-color: blue;
     margin-left: 8px;
+    animation: animate3 5s infinite;
+    position: relative;
 }
+@keyframes animate1 {
+    0%   {top: 0px; width: 50px;}
+    100% {top: 200px; width: 200px;}
+}
+@keyframes animate2 {
+    0%   {top: 0px; width: 50px;}
+    50% {top: 200px; width:300px;}
+    100% {top: 0px; width: 50px;}
+}
+@keyframes animate3 {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 0px; left: 630px;}
+    50%  {top: 74px; left: 630px;}
+    75%  {top: 74px; left: 0px;}
+    100% {top: 0px; left: 0px;}
+  }
