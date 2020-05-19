@@ -1,0 +1,65 @@
+@keyframes animate{
+   0% {
+      left: 0;
+      top:0;
+   }
+
+   25% {
+      left: -300px;
+      background: salmon;
+   }
+
+   100% {
+      left: 1200px;
+      background:blue;
+      top:700px;
+   }
+}
+
+
+div{
+   width: 300px;
+   height: 250px;
+   border: solid 1px darkgray;
+   position: relative;
+   background: green;
+   animation-name: animate;
+   animation-duration: 8s;
+   animation-iteration-count: 3;
+   animation-direction: alternate;
+   animation-fill-mode: forwards;
+   animation-timing-function: linear;
+} 
+
+
+
+
+
+
+/* @keyframes animate{
+   from {
+      border: solid 1px darkgray;
+      width: 300px;
+      top:0;
+   }
+   to {
+      background: red;
+      border: solid 30px royalblue;
+      width: 900px;
+      top:300px;
+   }
+}
+div{
+   width: 300px;
+   height: 250px;
+   border: solid 1px darkgray;
+   margin: auto;
+   position: relative;
+   background: green;
+   animation-name: animate;
+   animation-duration: 5s;
+   animation-delay: 5s;
+   animation-iteration-count: 1;
+   animation-direction: normal;
+   animation-fill-mode: backwards;
+} */
