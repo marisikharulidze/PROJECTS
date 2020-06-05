@@ -1,0 +1,137 @@
+.gray{
+    height: 150px;
+    width: 800px;
+    background-color: gray;
+    border: rgb(80, 80, 80) solid 2px;
+    position: relative;
+}
+.graylittle{
+    height: 120px;
+    width: 800px;
+    background-color: gray;
+    border: rgb(80, 80, 80) solid 2px;
+    position: relative;
+}
+.gradient1{
+    background-image: linear-gradient(to right, red ,green, blue);
+    height: 120px;
+    width: 180px;
+    border: solid 0.5px;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+.gradient2{
+    background-image: linear-gradient(to top, red ,green, blue);
+    height: 120px;
+    width: 180px;
+    border: solid 0.5px;
+    position: absolute;
+    top: 14px;
+    left: 215px;
+}
+.gradient3{
+    background-image: linear-gradient(to bottom right, red ,green, blue);
+    height: 120px;
+    width: 180px;
+    border: solid 0.5px;
+    position: absolute;
+    top: 14px;
+    left: 410px;
+}
+.gradient4{
+    background-image: linear-gradient(to top right, red 30% ,green 50%, blue 20%);
+    height: 120px;
+    width: 180px;
+    border: solid 0.5px;
+    position: absolute;
+    top: 14px;
+    left: 605px;
+}
+.gradient5{
+    background-image: radial-gradient(red ,green, blue);
+    height: 120px;
+    width: 180px;
+    border: solid 0.5px;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+.gradient6{
+    background-image: radial-gradient( red 50%,green 80% , blue 20%);
+    height: 120px;
+    width: 180px;
+    border: solid 0.5px;
+    position: absolute;
+    top: 14px;
+    left: 215px;
+}
+.gradient7{
+    background-image: radial-gradient(red ,green, blue,red ,green, blue,red ,green, blue);
+    height: 120px;
+    width: 180px;
+    border: solid 0.5px;
+    position: absolute;
+    top: 14px;
+    left: 410px;
+}
+.gradient8{
+    background-image: radial-gradient( red 20%,green 10% , blue 30%);
+    height: 120px;
+    width: 180px;
+    border: solid 0.5px;
+    position: absolute;
+    top: 14px;
+    left: 605px;
+}
+.box1{
+    background-image: linear-gradient(to right, red ,green, blue);
+    height: 25px;
+    width: 180px;
+    border: solid 0.5px rgb(0, 0, 143);
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: whitesmoke;
+    padding: 25px 0px;
+    text-shadow: 4px 2px whitesmoke;
+}
+.box2{
+    background-image: linear-gradient(to top left, red 30% ,green 50%, blue 20%);
+    height: 25px;
+    width: 180px;
+    border: solid 0.5px rgb(0, 0, 143); 
+    position: absolute;
+    top: 20px;
+    left: 215px;
+    color: whitesmoke;
+    padding: 25px 0px;
+    text-shadow: 4px 2px whitesmoke;
+}
+.box3{
+    background-color: gray;
+    height: 25px;
+    width: 180px;
+    border: solid 0.5px rgb(0, 0, 143);
+    position: absolute;
+    top: 20px;
+    left: 410px;
+    color: whitesmoke;
+    padding: 25px 0px;
+    text-shadow: 3px 3px 8px red;
+    box-shadow: 7px 7px 12px red;
+}
+.box4{
+    background-color: gray;
+    height: 25px;
+    width: 180px;
+    border: solid 0.5px rgb(0, 0, 143);
+    position: absolute;
+    top: 20px;
+    left: 605px;
+    color: whitesmoke;
+    padding: 25px 0px;
+    text-shadow: 3px 3px 8px blue;
+    box-shadow: 5px 5px black;
+
+}
