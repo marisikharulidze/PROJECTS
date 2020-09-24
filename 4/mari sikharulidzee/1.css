@@ -1,0 +1,44 @@
+.main{
+    width: 100%;
+    background-color: rgb(217, 217, 255);
+    height: 390px;
+    border: solid 0px;
+    padding: 15px 60px;
+    position: relative;
+}
+.pic{
+    height: 230px;
+    width: 300px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+}
+.pic2{
+    left: 410px;
+}
+.pic3{
+    left: 760px;
+}
+.pic4{
+    left: 1110px;
+}
+.text{
+    position: absolute;
+    top: 300px;
+    font-size: 25px;
+}
+.button{
+    position: absolute;
+    top: 370px;
+    border: solid 0px;
+    background-color: orange;
+    border-radius: 30px;
+    padding: 6px 50px;
+    height: 20px;
+    width: 70px;
+    color: whitesmoke;
+}
+a{
+    color: whitesmoke;
+    text-decoration: none;
+}

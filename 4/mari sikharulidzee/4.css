@@ -1,0 +1,20 @@
+.main{
+    height: 600px;
+    width: 550px;
+    border: solid 1px black;
+    position: relative;
+}
+.okay{
+    position: absolute;
+    left: 160px;
+    top: 140px;
+    z-index: 1;
+    color: black;
+}
+input{
+    border-top: white solid;
+    border-bottom: rgb(219, 219, 219) solid 1px;
+    border-left: white  solid;
+    border-right: white  solid;
+    width: 300px;
+}

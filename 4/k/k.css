@@ -1,0 +1,40 @@
+@keyframes rotate{
+    from{transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+}
+.gareta{
+    position: absolute;
+    background-color: black;
+    border-top: blue 30px solid;
+    border-bottom: red 30px solid;
+    border-left: green 30px solid;
+    border-right: gray 30px solid;
+    border-radius: 600px;
+    top: 200px;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    left: 500px;
+    top: 80px;
+}
+@keyframes radial{
+    50%{background-image: radial-gradient(red 20%,yellow 40%,yellow 20% );}
+    100%{background-image: radial-gradient( red 40%,yellow 50%,yellow 70% );}
+}
+.yviteli{
+    height: 400px;
+    width: 400px;
+    border: solid 0px;
+    border-radius: 200px;
+    position: radial;
+    animation-name: radial;
+    animation-duration: 2s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    background-image: radial-gradient(red 20%,yellow 40%,yellow 20% );
+}

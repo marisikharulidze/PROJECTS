@@ -1,0 +1,53 @@
+.flex-container {
+    display: flex;
+    border: solid black 1px;
+    justify-content: space-around;
+    height: 600px;
+    position: absolute;
+}
+.flex-container div {
+    margin: 10px;
+    background-color: rgb(0, 0, 124);
+}
+
+.box1{
+    width: 250px;
+    height: 97%;
+}
+.box2{
+    height: 50%;
+    width: 250px;
+}
+.box3{
+    height: 50%;
+    width: 420px;
+}
+.box4{
+    height: 97%;
+    width:250px;
+}
+.box5{
+    height: 50%;
+    width: 250px;
+}
+.box6{
+    height: 45%;
+    width: 460px;
+    position: absolute;
+    top: 52%;
+    left: 17.7%;
+}
+.box7{
+    height: 45%;
+    width: 250px;
+    position: absolute;
+    top: 52%;
+    left: 82.2%;
+}
+.box8{
+    height: 45%;
+    width: 215px;
+    position: absolute;
+    top: 52%;
+    left: 49%;
+}
