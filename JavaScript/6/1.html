@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="1.js"></script>
+    <link rel="stylesheet" href="1.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>1) kviris dge: </div>
+    <div id="smth" style="border: black 1px solid;height: 25px;width: 150px;padding: 5px;position: absolute;top: 0px;left:100px;"></div>
+    <br>
+    <button style="height: 30px;width: 80px;" id="1" onclick="func1()">1</button>
+    <button style="height: 30px;width: 80px;" id="2" onclick="func2()">2</button>
+    <button style="height: 30px;width: 80px;" id="3" onclick="func3()">3</button>
+    <button style="height: 30px;width: 80px;" id="4" onclick="func4()">4</button>
+    <button style="height: 30px;width: 80px;" id="5" onclick="func5()">5</button>
+    <button style="height: 30px;width: 80px;" id="6" onclick="func6()">6</button>
+    <button style="height: 30px;width: 80px;" id="7" onclick="func7()">7</button>
+    <br>
+    <br>
+    <div>2) 
+        <input type="text" id="num1" placeholder="input number one">
+        <input type="text" id="num2" placeholder="input number two">
+    </div>
+    <button class="buttonn" onclick="plus()">+</button>
+    <button class="buttonn" style="left: 65px;" onclick="minus()">-</button>
+    <button class="buttonn" style="left: 105px;" onclick="mult()">*</button>
+    <button class="buttonn" style="left: 145px;" onclick="div()">/</button>
+    <button class="buttonn" style="left: 185px;" onclick="axarisxeba()">^</button>
+    <button class="buttonn" style="left: 225px;font-size: xx-small;" onclick="fesvi()">fesvi</button>
+    <br>
+    <div id="result" class="result"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br><br>
+    3)<div style="margin-left: 40px;">
+        principle : <input type="text" id="princ"><br><br>
+        rate : <input type="text" id="rate"><br><br>
+        time : <input type="text" id="time"><br><br>
+        <button onclick="ez_calculate()">calculate</button><br><br>
+        <div id="okay"></div>
+    </div>
+    <br>
+    <br>
+    4)<div style="margin-left: 40px;">
+        principle ammount : <input type="text" id="ammount"><br><br>
+        rate of interest : <input type="text" id="ratei"><br><br>
+        years : <input type="text" id="years"><br><br>
+        rate of compound per year : <input type="text" id="rateY"><br><br>
+        <button onclick="hard_calculate()">calculate</button><br><br>
+        <div id="results"></div>
+    </div>
+    <br>
+    <br>
+
+    <div>5)
+        <button id="gilaki" onclick="ricxvi()">for random numbers click!</button>
+    </div>
+    <br>
+
+    <div>6)
+        <button id="shualedi" onclick="shualedi(10,40)">click for specific random numbers</button>
+    </div>
+    <p>
+        7)<script>
+            smth7()
+        </script>
+    </p>
+</body>
+</html>
