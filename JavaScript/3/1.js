@@ -82,19 +82,37 @@ function func10(){
     var str="its a beautiful day to be sitting at home:)"
     var arr = ["great", "beautiful", "to", "and"]
     for(i=0;i<arr.length;i++){
-        ar = arr[i]
-        if (str.includes(ar)){
-            for(i=0;i<length.ar;i++){
-                document.write("*")
-            }
+        var ar = arr[i]
+        if (str.includes(ar)){ 
+            document.write(str.replace(ar,"*"))
         }
+        document.write("<br>")
     }
 }
 function func11(){
+    return 0
     var str="its a beautiful day to be sitting at home:)"
-    for(i=0;i<arr.length;i++){
-        if (str.charAt(i)==str.charAt(i)){
-            
+    for(i=0;i<str.length;i++){
+        k = str.charAt(i)
+        document.write(k)
+    }
+}
+
+function faf(){
+    var str = "abcdefghijklmnopqrstuvwxyz123456789!@#$%^&*-=+|/"
+    document.getElementById("minSimbolo").value=minS
+    document.getElementById("maxSimbolo").value=maxS
+    document.getElementById("minSitkva").value=minA
+    document.getElementById("maxSitkva").value=maxA
+    document.getElementById("abzaci").value=a
+    function rand(){
+        for(i=0; i<str.length; i++){
+            k = str.charAt(Math.floor(Math.random()*(maxS-minS)+minS))
+            document.getElementById("end").innerHTML=k
         }
+        document.write("   ")
+    }
+    for(j; j<maxA; j++){
+        rand()
     }
 }
