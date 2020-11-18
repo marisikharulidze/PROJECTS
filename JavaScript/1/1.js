@@ -11,7 +11,7 @@ function jami(name="a da b ricxvebis jami"){
 function shrifti(name="3)shrifti",css="shrifti"){
     document.write("<p class="+css+">"+name+"</p>")
 }
-function table_builder(sigane=100, simagle=100,bgColor="white",borderWidth=1){
+function table_builder(sigane=100,simagle=100,bgColor="white",borderWidth=1){
     table = `<table style="width:`+sigane+`px;
                            height:`+simagle+`px;
                            background:`+bgColor+`";
@@ -26,6 +26,7 @@ function table_builder(sigane=100, simagle=100,bgColor="white",borderWidth=1){
                     <td></td>
                     <td></td>
                 </tr>`;
+                
         table += '</table>';
         document.write(table);
 }
@@ -55,5 +56,16 @@ function parameter(m,n){
             document.write(i+"<br>");
         }
     }
+}
+function tabele_bulderr(strikoni,sveti){
     
+    result=`<table>`
+
+    for(var i=0; i<strikoni; i++){
+        result+="<tr>"
+        for(var j=0; j<sveti; j++){
+            result+=`<td>`
+        }
+    }
+    document.write(result)
 }

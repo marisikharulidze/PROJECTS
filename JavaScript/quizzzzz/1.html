@@ -3,36 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="1.js"></script>
-    <link rel="stylesheet" href="1.css">
     <title>Document</title>
 </head>
 <body>
-    <table style="position: relative;">
-        <tr>
-            <td>
-                <script>
-                    pic()
-                </script>
-            </td>
-            <td>
-                <script>
-                    pic()
-                </script>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <script>
-                    pic()
-                </script>
-            </td>
-            <td>
-                <script>
-                    pic()
-                </script>
-            </td>
-        </tr>
-    </table>
+    <script>
+        function check(){
+            var a = document.getElementById("number").value
+            var b = document.getElementById("age").value
+            var c = document.getElementById("name").value
+            alert("number : "+a+"  "+"age : "+b+"  "+"name : "+c)
+        }
+    </script>
+    name : <input type="text" id="name">
+    <br>
+    <br>
+    age : <input type="number" id="age">
+    <br>
+    <br>
+    mobile : <input type="number" id="number">
+    <br>
+    <br>
+    <button onclick="check()">check</button>
 </body>
 </html>

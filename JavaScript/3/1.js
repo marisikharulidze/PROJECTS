@@ -73,14 +73,22 @@ function func9(){
     var arr = ["great", "beautiful", "to", "and"]
     for(i=0;i<arr.length;i++){
         ar = arr[i]
-        if (str.indexOf(ar)!=1){
-            return ar
+        if (str.includes(ar)){
+            document.write(ar+"  ")
         }
-    }
-    return null
+    }document.write("<br>"+"სტრიქონში მოიძებნება სტრიქონების მასივში ჩაწერილი სიტყვები.")
 }
 function func10(){
-    
+    var str="its a beautiful day to be sitting at home:)"
+    var arr = ["great", "beautiful", "to", "and"]
+    for(i=0;i<arr.length;i++){
+        ar = arr[i]
+        if (str.includes(ar)){
+            for(i=0;i<length.ar;i++){
+                document.write("*")
+            }
+        }
+    }
 }
 function func11(){
     var str="its a beautiful day to be sitting at home:)"
