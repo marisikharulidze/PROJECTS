@@ -79,40 +79,45 @@ function func9(){
     }document.write("<br>"+"სტრიქონში მოიძებნება სტრიქონების მასივში ჩაწერილი სიტყვები.")
 }
 function func10(){
-    var str="its a beautiful day to be sitting at home:)"
+    var str="its a beautiful day to be sitting at home :)"
     var arr = ["great", "beautiful", "to", "and"]
     for(i=0;i<arr.length;i++){
         var ar = arr[i]
-        if (str.includes(ar)){ 
-            document.write(str.replace(ar,"*"))
+        if (str.includes(ar)){
+            str=str.replace(ar,"*")
         }
-        document.write("<br>")
     }
+    document.write(str+"<br>")
 }
 function func11(){
     return 0
     var str="its a beautiful day to be sitting at home:)"
-    for(i=0;i<str.length;i++){
-        k = str.charAt(i)
-        document.write(k)
+    let find = 'a'
+    while(str.indexOf(find)!=-1){
+        srt = str.replace(find," ")
+        document.write(str)
     }
 }
-
 function faf(){
-    var str = "abcdefghijklmnopqrstuvwxyz123456789!@#$%^&*-=+|/"
-    document.getElementById("minSimbolo").value=minS
-    document.getElementById("maxSimbolo").value=maxS
-    document.getElementById("minSitkva").value=minA
-    document.getElementById("maxSitkva").value=maxA
-    document.getElementById("abzaci").value=a
-    function rand(){
-        for(i=0; i<str.length; i++){
-            k = str.charAt(Math.floor(Math.random()*(maxS-minS)+minS))
-            document.getElementById("end").innerHTML=k
-        }
-        document.write("   ")
-    }
-    for(j; j<maxA; j++){
-        rand()
-    }
+    var str = "abcdefghijklmnopqrstuvwxyz"
+    minS=parseInt(document.getElementById("minSimbolo").value)
+    maxS=parseInt(document.getElementById("maxSimbolo").value)
+    minA=parseInt(document.getElementById("minSitkva").value)
+    maxA=parseInt(document.getElementById("maxSitkva").value)
+    a=parseInt(document.getElementById("abzaci").value)
+    var output= ""
+    //function rand(){
+        x = Math.floor(Math.random()*(maxA-minA)+minA)
+        y = Math.floor(Math.random()*(maxS-minS)+minS)
+        for(i=0; i<a; i++){
+            for(j=0; j<x; j++){
+                for(k=0; k<y; k++){
+                    output=output + str.charAt(Math.floor(Math.random()*str.length))
+                    console.log(output)
+                } 
+                output+=" "
+            } 
+            output +="\n"
+        }      
+        document.getElementById("end").value="you get : "+output
 }
