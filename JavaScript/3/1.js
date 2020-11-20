@@ -98,6 +98,8 @@ function func11(){
         document.write(str)
     }
 }
+
+
 function faf(){
     var str = "abcdefghijklmnopqrstuvwxyz"
     minS=parseInt(document.getElementById("minSimbolo").value)
@@ -106,7 +108,6 @@ function faf(){
     maxA=parseInt(document.getElementById("maxSitkva").value)
     a=parseInt(document.getElementById("abzaci").value)
     var output= ""
-    //function rand(){
         x = Math.floor(Math.random()*(maxA-minA)+minA)
         y = Math.floor(Math.random()*(maxS-minS)+minS)
         for(i=0; i<a; i++){

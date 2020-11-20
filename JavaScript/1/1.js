@@ -57,15 +57,20 @@ function parameter(m,n){
         }
     }
 }
-function tabele_bulderr(strikoni,sveti){
+function table_builder1(strikoni,sveti){
     
     result=`<table>`
 
     for(var i=0; i<strikoni; i++){
         result+="<tr>"
         for(var j=0; j<sveti; j++){
-            result+=`<td>`
+            result+=`<td>`+`</td>`
         }
+        result+="</tr>"
     }
+    result+=`</table>`
+    //document.getElementById("tbl").innerHTML=result
     document.write(result)
+    console.log(result)
+ 
 }

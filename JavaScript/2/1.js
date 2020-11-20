@@ -472,3 +472,32 @@ function day15(){
 function Mday(){
     document.write(Math.round(Math.random()*(31-1)+1))
 }
+
+
+function table(){
+    result = `
+    
+    <tr>
+        <td>${pic()}</td>
+        <td>${pic()}</td>
+        <td>${pic()}</td>
+        <td>${pic()}</td>
+    </tr>
+    <tr>
+        <td>${pic()}</td>
+        <td>${pic()}</td>
+        <td>${pic()}</td>
+        <td>${pic()}</td>
+    </tr>
+    <tr>
+        <td>${pic()}</td>
+        <td>${pic()}</td>
+        <td>${pic()}</td>
+        <td>${pic()}</td>
+    </tr>
+    
+    
+    `
+    document.getElementById("table").innerHTML=result
+    console.log(result)
+}
