@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bigbox{
+            height: 373px;
+            width: 525px;
+            border: rgb(199, 2, 2) solid 1.5px;
+            position: relative;
+        }
+        .box{
+            height: 40px;
+            width: 40px;
+            border: rgb(109, 10, 10) solid 2px;
+            background-color: rgb(121, 121, 255);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        document.onkeydown = function(e) {
+    switch (e.keyCode) {
+        case 39:
+            var box = document.querySelector(".box").animate([
+                    { transform: 'translateX(0px)' }, 
+                    { transform: 'translate(480px)' }
+                ], { 
+                    duration: 2000, });
+
+            // document.querySelector(".box").addEventListener("keypress", function() {
+            // document.querySelector(".box").style.transform = "translateX(480px)"
+            // })
+        // case 37:
+        //     var box = document.querySelector(".box").animate([
+        //             { transform: 'translateX(0%)' }, 
+        //             { transform: 'translate(480px)' }
+        //         ], { 
+        //             duration: 2000, iterations: Infinity});
+        default : break;
+    }
+}
+
+    </script>
+
+
+    <center>
+        <div class="bigbox">
+            <div class="box"></div>
+        </div>
+    </center>
+</body>
+</html>

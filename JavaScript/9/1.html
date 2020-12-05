@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="1.js"></script>
+    <style>
+        .erti{
+            height: 373px;
+            width: 525px;
+            border: rgb(199, 2, 2) solid 1.5px;
+            position: relative;
+        }
+        .ori{
+            height: 85px;
+            width: 310px;
+            border: rgb(117, 0, 0) solid 2px;
+            padding: 4px;
+            text-align: left;
+        }
+        button{
+            margin-top: 4px;
+        }
+        .box{
+            height: 40px;
+            width: 40px;
+            border: rgb(109, 10, 10) solid 2px;
+            background-color: rgb(121, 121, 255);
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="erti">
+            <div class="box" id="box"></div>
+        </div>
+        <div class="ori">
+            <button onclick="kvemot()" id="kvemot">kvemot</button>
+            <button onclick="zemot()" id="zemot">zemot</button>
+            <button onclick="marcxniv()" id="marcxniv">marcxniv</button>
+            <button onclick="marjvniv()" id="marjvniv">marjvniv</button>
+            <button onclick="kvemotMarc()" id="kvemotMarc">kvemot-marcxniv</button>
+            <button onclick="kvemotMarj()" id="kvemotMarj">kvemot-marjvniv</button>
+            <button onclick="zemotMarc()" id="zemotMarc">zemot-marcxniv</button>
+            <button onclick="zemotMarj()" id="zemotMarj">zemot-marjvniv</button>
+        </div>
+        <div id="log"></div>
+    </center>
+</body>
+</html>
