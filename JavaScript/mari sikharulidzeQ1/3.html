@@ -14,7 +14,10 @@
     </style>
 </head>
 <body>
-    <div id="wrap"></div>
+    <center>
+        <div id="table"></div>
+    </center>
+    
     <script>
         function tableBuilder(row, col){
             result = `<table>`
@@ -22,13 +25,29 @@
             for(i = 0; i < row; i++){
                 result += "<tr>"
                 for(j = 0; j < col; j++){
-                    result += `<td>`+i+' : '+j+`</td>`
+                    result += `<td>`+color()+`</td>`
                 }
             }
             result += `</table>`
             return result
         }
-        document.getElementById("wrap").innerHTML = tableBuilder(5,5)
+
+        function color() {
+            var color = "";
+            for(var i = 0; i < 3; i++) {
+                var sub = Math.floor(Math.random() * 256).toString(16);
+                color += (sub.length == 1 ? "0" + sub : sub);
+            }
+            return "#" + color;
+        }
+        function rand(){
+            var color = Math.floor(Math.random() * Math.pow(256, 3)).toString(16);
+            while(color.length < 6) {
+                color = "0" + color;
+            }
+            return "#" + color;
+        }
+        setInterval(()=> {document.getElementById("table").innerHTML =tableBuilder(3,3)},1000);
     </script>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        paroli : <input type="text" id="paroli" onkeyup="func1()"><br><br>
+        dabadebis tarigi : <input type="date" id="date" onkeyup="func2()"><br><br>
+        <div id="meore"></div><br><br>
+        <div id="mesame"></div><br><br>
+        
+        </center>
+
+    <script>
+        function func1(){
+            id=document.getElementById("paroli").value
+            for(var i=0; i<=id.length; i++){
+                if(id.charAt(i)=="@" || id.charAt(i)=="#" || id.charAt(i)=="!" || id.charAt(i)=="%" || id.charAt(i)=="*" || id.charAt(i)=="^" || id.charAt(i)=="&" || id.charAt(i)=="1" || id.charAt(i)=="2" || id.charAt(i)=="3" || id.charAt(i)=="4" || id.charAt(i)=="5" || id.charAt(i)=="6" || id.charAt(i)=="7" || id.charAt(i)=="8" || id.charAt(i)=="9"){
+                    document.getElementById("meore").innerText="paroli sheicavs simboloebs"
+        
+                }
+            }
+        }
+        function func2(){
+            id=document.getElementById("date").value
+            var year = id.getFullYear()
+            console.log(year)
+        }
+        
+    </script>
+</body>
+</html>

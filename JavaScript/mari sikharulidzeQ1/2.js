@@ -1,5 +1,5 @@
 function str(){
-    var n=prompt("შეიყვანეთ სტრიქონი")
+    var n=prompt("შეიყვანეთ სტრიქონი ქართულად")
     document.write(n+"<br>")    
     var count=0
     var string=n.toString()

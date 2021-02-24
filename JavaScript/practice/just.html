@@ -1,17 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Lecture 9</title>
-    <link rel="stylesheet" href="just.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+
+    <style>
+        #wrapper{
+            width: 800px;
+            padding: 25px;
+            border: solid 1px black;
+            margin: auto;
+            text-align: center;
+        }
+        td{
+            width: 100px;
+            height: 100px;
+        }
+        table{
+            margin: 50px auto;
+        }
+    </style>
 </head>
+
 <body>
-<div class="menu">
-    <button onclick="startAddElement()">Add Element</button>
-    <button id="points">0</button>
-    <button>Timer:<span id="timer"> 10 </span></button>
-</div>
-<div class="d1"></div>
-<script src="just.js"></script>
+
+    <div id = 'wrapper'>
+        <div id="in">
+            <label>rows</label>
+            <input type="number" value="4" id="row_input">
+            <label>columns</label>
+            <input type="number" value="4" id="col_input">
+        </div>
+
+        <div id="result">
+
+        </div>
+        <div id="counter">
+            <label>red</label>
+            <input type="number" value= 0 id="red">
+            <label>yellow</label>
+            <input type="number" value= 0 id="yellow">
+            <br><br>
+            <label>blue</label>
+            <input type="number" value= 0 id="blue">
+            <label>green</label>
+            <input type="number" value= 0 id="green">
+        </div>
+    </div>
+
+    <script>
+        function tableBUilder(rows, cols){
+            var myColors = ["red", "yellow", "blue", "green"]
+            var result = `<table>`
+            for(let i = 0; i < rows; i++){
+                result += `<tr>`
+                for(let j = 0; j < cols; j++){
+                    var randCol = myColors[Math.floor(Math.random() * myColors.length)]
+                    if(randCol == "red"){
+                        document.getElementById("red").value++
+                    }
+                    if(randCol == "yellow"){
+                        document.getElementById("yellow").value++
+                    }
+                    if(randCol == "blue"){
+                        document.getElementById("blue").value++
+                    }
+                    if(randCol == "green"){
+                        document.getElementById("green").value++
+                    }
+                    result += `<td style="background-color:${randCol};"></td>`
+                }
+                result += `</tr>`
+            }
+            result += `</table>`
+            document.getElementById('result').innerHTML = result
+        }
+
+        setInterval(() => {
+            document.getElementById("blue").value = 0
+            document.getElementById("red").value = 0
+            document.getElementById("green").value = 0
+            document.getElementById("yellow").value = 0
+            var rows = document.getElementById("row_input").value
+            var cols = document.getElementById("col_input").value 
+            tableBUilder(rows, cols)
+        }, 3000);
+        
+    </script>
+
 </body>
+
 </html>

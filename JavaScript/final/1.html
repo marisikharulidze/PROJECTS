@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    td{
+    border: solid 1px black;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <button id="stop" onclick="stop()">stop refresh</button>
+    <button id="start" onclick="start()">start refresh</button>
+    <div style="text-align: center;">Random Galery</div>
+    <center><table id = "table"></table></center>
+
+    <script>
+        function pic(){
+        var pic=Math.round(Math.random()*(5-1)+1)
+        if(pic==1){
+            var x=document.createElement("img")
+            x.setAttribute("src","pic/1.jpg")
+            x.setAttribute("width","150")
+            x.setAttribute("height","100")
+            document.body.appendChild(x)
+        }else if(pic==2){
+            var x=document.createElement("img")
+            x.setAttribute("src","pic/2.jpg")
+            x.setAttribute("width","150")
+            x.setAttribute("height","100")
+            document.body.appendChild(x)
+        }else if(pic==3){
+            var x=document.createElement("img")
+            x.setAttribute("src","pic/3.jpg")
+            x.setAttribute("width","150")
+            x.setAttribute("height","100")
+            document.body.appendChild(x)
+        }else if(pic==4){
+            var x=document.createElement("img")
+            x.setAttribute("src","pic/4.jpg")
+            x.setAttribute("width","150")
+            x.setAttribute("height","100")
+            document.body.appendChild(x)
+        }else if(pic==5){
+            var x=document.createElement("img")
+            x.setAttribute("src","pic/5.jpg")
+            x.setAttribute("width","150")
+            x.setAttribute("height","100")
+            document.body.appendChild(x)
+        }else if(pic==6){
+            var x=document.createElement("img")
+            x.setAttribute("src","pic/6.jpg")
+            x.setAttribute("width","150")
+            x.setAttribute("height","100")
+            document.body.appendChild(x)
+        }
+    }
+        function table(){
+            result = `
+            <tr>
+                <td>${pic()}</td>
+                <td>${pic()}</td>
+                <td>${pic()}</td>
+                <td>${pic()}</td>
+            </tr>
+            <tr>
+                <td>${pic()}</td>
+                <td>${pic()}</td>
+                <td>${pic()}</td>
+                <td>${pic()}</td>
+            </tr>
+            
+            `
+            document.getElementById("table").innerHTML=result
+        }
+        table()
+        function start(){
+            setInterval(()=> {table(),1000})
+        }
+        function stop(){
+            clearInterval(()=> {table()})
+        }
+    </script>
+</body>
+</html>

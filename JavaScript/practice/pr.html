@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+
+    <style>
+        #wrapper{
+            width: 800px;
+            height: 700px;
+            border: solid 1px black;
+            margin: auto;
+            position: relative;
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+        
+    </style>
+</head>
+
+<body> 
+
+    <div id="wrapper">
+
+    </div>
+
+    <script>
+
+        var boxHistory ={
+            x : 0,
+            y : 0,
+            interval : 100
+        }
+
+        function getRandomColor(){
+            return `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`
+        }
+
+        function drawBoxes(){
+            var newBox = document.createElement('div')
+            newBox.classList.add('box')
+            newBox.style.backgroundColor = getRandomColor()
+            newBox.style.left = `${boxHistory.x}px`
+            newBox.style.top = `${boxHistory.y}px`
+            document.getElementById("wrapper").appendChild(newBox)
+        }  
+
+
+        var animation = setInterval(() => {
+            drawBoxes()
+            if(boxHistory.x + boxHistory.interval == 800 || boxHistory.x + boxHistory.interval == -100){
+                boxHistory.y += 100
+                boxHistory.x += boxHistory.interval
+                boxHistory.interval = -boxHistory.interval
+            }
+
+            if(boxHistory.x == 800 && boxHistory.y == 700){
+                clearInterval(animation)
+            }
+            boxHistory.x += boxHistory.interval
+            
+        }, 200);
+        
+
+    </script>
+
+</body>
+
+</html>
