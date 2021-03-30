@@ -3,15 +3,14 @@
     <style>
         table {
             border: solid 1px black;
-            width: 450px;
-            height:400px;
+            width: 650px;
             margin:auto;
             text-align: center;
         }
 
         td {
             border: solid 1px black;
-            padding:40px;
+            padding:10px;
         }
     </style>
 </head>
@@ -43,33 +42,25 @@
                   "status"=>"available"
                 ),
         );
-    ?>
-    <table>
-        <tr>
-            <?php
-                foreach(array_keys($cars[0]) as $header){
-            ?>
-                <td><?=$header?></td>
-            <?php
+
+        echo "<table>";
+
+            echo"<tr style='height:50px'>";
+                foreach(array_keys($cars[0]) as $type){
+                    echo"<td>".$type."</td>";
                 }
-            ?>
-        </tr>
-        
-        <?php
+            echo"</tr>";
+            
             foreach($cars as $car){
-        ?>
-            <tr>
-                <?php
-                    foreach($car as $item){
-                ?>
-                    <td><?=$item?></td>
-                <?php
+                echo"<tr style='height:150px'>";
+                    foreach($car as $each){
+                        echo"<td>".$each."</td>";
                 }
-                ?>
-            </tr>
-        <?php
+                echo"</tr>";
             }
-        ?>
-    </table>
+
+        echo"</table>";
+    ?>
+    
 </body>
 </html>
