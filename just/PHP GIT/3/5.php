@@ -22,11 +22,14 @@
 
     <?php
         function numbers(){
-            $num = $_POST["num"];
-            if(!is_numeric($num)){
-                echo "<span> input numbers only </span>";
+            @$num = $_POST["num"];
+            if(!empty($num)){
+                if(!is_numeric($num)){
+                    echo "<span> input numbers only </span>";
+                }
+                else echo "<p> string lenght = ".strlen($num)."</p>";
             }
-            else echo "<p> string lenght = ".strlen($num)."</p>";
+            
         }  
         numbers();
     ?>

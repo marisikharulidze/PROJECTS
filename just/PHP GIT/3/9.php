@@ -6,15 +6,16 @@
 </head>
 <body>
     <form method = "POST"><br>
-        Password : <input type="text" name="pass" value="<?php echo $_POST["pass"]; ?>"><br><br>
+        Password : <input type="text" name="pass" value="<?php if(!empty($_POST["pass"])){ echo $_POST["pass"];} ?>"><br><br>
         <input type = "submit"><br><br>
+        
     </form>
 
     <?php
         
         function strength(){
             $GLOBALS['$final'] = 7;
-            $password = $_POST["pass"];
+            @$password = $_POST["pass"];
 
             if(!empty($password)){
                 if(strlen($password)<8){
@@ -48,7 +49,9 @@
             else if($GLOBALS['$final'] >= 5 ){
                 $messege = "Strong Password";
             }
-        echo "<span> $messege </span>";
+            else {$messege = " ";}
+            
+            echo "<span> $messege </span>";
         }
     ?>
     
