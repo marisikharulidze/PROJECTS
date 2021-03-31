@@ -42,14 +42,19 @@
             if(empty($name)){
                 $nameError = " *Name is required";
             }
-            if(is_numeric($name)){
-                $nameError = " *Name should be alphabetical";
+            else{
+                if(is_numeric($name)){
+                    $nameError = " *Name must be alphabetical";
+                }
+                else if(strlen($name)<3){
+                    $nameError = " *Name is too short";
+                }
             }
-
+            
             if(empty($mail)){
                 $mailError = " *E-mail is required";
             }
-            if(!empty($mail)){
+            else{
                 if(strpos("$mail", "@") != 0){
                     $websiteError = null;
                     if(strpos("$mail", ".") != 0){
@@ -63,7 +68,7 @@
             if(empty($website)){
                 $websiteError = " *Website is required";
             }
-            if(!empty($website)){
+            else{
                 if(strpos("$website", ".") != 0){
                     $websiteError = null;
                 }
@@ -73,7 +78,7 @@
             if(empty($comment)){
                 $commentError = " *Comment is required";
             }
-            if(!empty($comment)){
+            else{
                 if(strlen($comment) > 10){
                     $commentError = null;
                 }
@@ -89,22 +94,22 @@
     <form action ="<?php $_SERVER['PHP_SELF'];?>"method="POST">
         <h2><b>Validation : </b></h2>
         
-        Name : <input type="text" name="name">
+        Name : <input type="text" name="name" value="<?php echo $name;?>">
         <?php if(isset($nameError)){ ?>
             <span> <?php echo $nameError;}?></span>
         <br><br>
 
-        E-mail : <input type="text" name="mail">
+        E-mail : <input type="text" name="mail" value="<?php echo $mail; ?>">
         <?php if(isset($mailError)){ ?>
             <span><?php echo $mailError; }?></span>
         <br><br>
 
-        Website : <input type="text" name="website">
+        Website : <input type="text" name="website" value="<?php echo $website; ?>">
         <?php if(isset($websiteError)){ ?>
             <span><?php echo $websiteError; }?></span>
         <br><br>
 
-        Comment :<textarea name="comment" rows="5" cols="35"></textarea>
+        Comment :<textarea name="comment" rows="5" cols="35" value="<?php echo $comment; ?>"></textarea>
         <?php if(isset($commentError)){ ?>
             <span><?php echo "<br><br>".$commentError; }?></span>
         <br><br>
