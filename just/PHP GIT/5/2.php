@@ -24,7 +24,7 @@
             border: solid black 1px;
             margin: 10px auto;
             padding: 20px;
-            width: 800px;
+            width: 920px;
             background-color:black;
             color:whitesmoke;
         }
@@ -89,7 +89,7 @@
         <button name="delete">delete</button>
         <p><?=@$emptyError?></p>
         <span><?=@$messege?></span>
-        <p><?=@$noFile?></p>
+        <p><?=@$noFile?></p><br>
     </form>
 
     <div>
@@ -97,7 +97,9 @@
             <?php
                 $folder = scandir("files");
                 for($i=2; $i<count($folder); $i++){
-                    echo "<li><img src='files/".$folder[$i]."'> name : ".$folder[$i]."</li>";
+                    echo "<li>
+                            <img src='files/".$folder[$i]."'>click name to download : <a href='folder/".$folder[$i]."'download> ".$folder[$i]."</a>
+                         </li>";
                 }
             ?>
         </ol>
