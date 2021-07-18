@@ -1,0 +1,150 @@
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+.back {
+    background-image: url("pic/19.jpg");
+}
+
+.backSign {
+    background-image: url("pic/18.jpg");
+}
+
+.back,
+.backSign {
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.welcome {
+    text-shadow: 0 0 9px rgb(255, 255, 255), 0 0 15px black, 0 0 26px black, 0 0 46px #4245ff, 0 0 82px #3d7bff, 0 0 92px #5289ff, 0 0 102px #2a51ff, 0 0 151px #3357f7;
+    padding: 10px;
+    position: absolute;
+    font-size: 3.5em;
+    font-weight: bold;
+    color: rgb(219, 239, 255);
+    left: 29%;
+    box-shadow: 0 0 .2rem white, 0 0 2rem rgba(255, 255, 255, 0.74), 0 0 1.5rem #5a8ef056, 0 0 0.5rem #7494fd70, 0 0 0.5rem #0934f367, inset 0 0 0.6rem #1365fe5e;
+    top: 22%;
+    background-color: rgba(162, 191, 255, 0.068);
+}
+
+.welcome:hover {
+    box-shadow: 0 0 .2rem #fff, 0 0 1rem #fff, 0 0 1rem #5a8ef0, 0 0 0.5rem #a4b2ff, 0 0 0.1rem #0919f367, inset 0 0 0.3rem #1365feb7;
+    background: rgba(162, 191, 255, 0);
+    cursor: pointer;
+}
+
+.box {
+    width: 345px;
+    padding: 26px 30px;
+    border: solid 0.5px transparent;
+    background: rgba(180, 198, 255, 0.404);
+    position: absolute;
+    top: 65px;
+    left: 65px;
+    border-radius: 8px;
+    box-shadow: 0 0 .2rem #fff, 0 0 1rem rgba(255, 255, 255, 0.74), 0 0 1.5rem #5a8ef056, 0 0 0.5rem #7494fd70, 0 0 0.5rem #0934f367, inset 0 0 0.6rem #1365fe5e;
+}
+
+.signIn {
+    right: 18px;
+    position: absolute;
+    top: 12px;
+}
+
+.satauri {
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+    color: white;
+}
+
+button {
+    box-shadow: 0 0 .2rem #fff, 0 0 1rem #fff, 0 0 1.5rem #5a8ef056, 0 0 0.5rem #7489fd70, 0 0 0.5rem #0919f367, inset 0 0 0.6rem #1365fe5e;
+    border: solid rgba(97, 143, 241, 0.459) 2px;
+    background-color: transparent;
+    border-radius: 5px;
+    height: 25px;
+    width: 80px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.726);
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+}
+
+.profile:hover {
+    box-shadow: 0 0 .2rem #fff, 0 0 1rem #fff, 0 0 1.2rem #5a8ef0, 0 0 0.5rem #a4b2ff, 0 0 0.1rem #0919f367, inset 0 0 0.3rem #1365feb7;
+    background: rgba(96, 160, 255, 0.212);
+}
+
+button:hover {
+    box-shadow: 0 0 .2rem #fff, 0 0 1rem #fff, 0 0 1.2rem #5a8ef0, 0 0 0.5rem #a4b2ff, 0 0 0.1rem #0919f367, inset 0 0 0.3rem #1365feb7;
+    background: rgba(96, 160, 255, 0.212);
+}
+
+hr {
+    border: transparent 0.5px solid;
+    background: rgba(245, 245, 245, 0.233);
+    margin-top: 25px;
+}
+
+input {
+    margin-top: 6px;
+    background-color: whitesmoke;
+    height: 25px;
+    border: transparent;
+    padding: 5px;
+    box-shadow: 0 0 .2rem #fff, 0 0 1rem #fff, 0 0 1.5rem #5a8ef056, 0 0 0.5rem #7489fd70, 0 0 0.5rem #0919f367, inset 0 0 0.6rem #1365fe5e;
+}
+
+.inp {
+    width: 334px;
+}
+
+a {
+    text-decoration: transparent;
+    color: rgb(162, 199, 255);
+}
+
+p {
+    color: rgb(216, 1, 1);
+    font-weight: bold;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 0.726), 0 0 1px rgba(255, 118, 118, 0.685), 0 0 80px #fff, 0 0 42px #a2b3ff, 0 0 10px #5272ff52, 0 0 40px #5271ff, 0 0 20px #5272ff57, 0 0 16px #5272ff56;
+}
+
+.profile {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    width: 150px;
+}
+
+.profile:hover {
+    box-shadow: 0 0 .2rem #fff, 0 0 1rem #fff, 0 0 1.2rem #5a8ef0, 0 0 0.5rem #a4b2ff, 0 0 0.1rem #0919f367, inset 0 0 0.3rem #1365feb7;
+    background: rgba(96, 160, 255, 0.212);
+}
+
+table {
+    text-align: center;
+    height: 6%;
+    width: 99.8%;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    border: black solid 1px;
+    /* opacity: 40%; */
+    opacity: 80%;
+    color: rgba(255, 255, 255, 0.726);
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff, 0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+    box-shadow: 0 0 .2rem #fff, 0 0 1rem #fff, 0 0 1.2rem #5a8ef0, 0 0 0.5rem #a4b2ff, 0 0 0.1rem #0919f367, inset 0 0 0.3rem #1365feb7;
+}
+
+td {
+    border: solid 1px black;
+    text-align: center;
+}
