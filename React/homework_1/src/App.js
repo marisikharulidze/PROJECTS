@@ -2,7 +2,6 @@ import './App.css';
 import Counter from './components/Counter';
 import WeekDays from './components/WeekDays';
 
-
 function App() {
     const days = [
         { id: 1, day: 'ორშაბათი' },
@@ -14,15 +13,11 @@ function App() {
         { id: 7, day: 'კვირა' },
     ]
 
-
-    return ( <
-        >
-        <
-        WeekDays days = { days }
-        /> <
-        Counter / >
-        <
-        />
+    return (
+        <>
+            <WeekDays days={days}/>
+            <Counter />
+        </>
     );
 }
 
