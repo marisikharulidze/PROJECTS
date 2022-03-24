@@ -1,25 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import Counter from './components/Counter';
+import WeekDays from './components/WeekDays';
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    const days = [
+        { id: 1, day: 'ორშაბათი' },
+        { id: 2, day: 'სამშაბათი' },
+        { id: 3, day: 'ოთხშაბათი' },
+        { id: 4, day: 'ხუთშაბათი' },
+        { id: 5, day: 'პარასკევი' },
+        { id: 6, day: 'შაბათი' },
+        { id: 7, day: 'კვირა' },
+    ]
+
+
+    return ( <
         >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+        <
+        WeekDays days = { days }
+        /> <
+        Counter / >
+        <
+        />
+    );
 }
 
 export default App;
