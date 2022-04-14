@@ -4,8 +4,8 @@ import DisplayData from "./Components/DisplayDate";
 
 function App() {
   return (
-    // <Mouse />
-    <DisplayData/>
+    <Mouse />
+    // <DisplayData/>
   );
 }
 

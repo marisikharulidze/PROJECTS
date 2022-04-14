@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
 const Cube = () => {
-
   const [coordinates, setCoordinates] = useState([0, 0]);
   const handleMouseMove = (e) => {
     const back = e.target.getBoundingClientRect();
@@ -20,11 +19,8 @@ const Cube = () => {
   }, []);
 
   return (
-
     <div className="cube">
-
       <div className="back" id="back">
-
         <h2 className="xy">
           X: {coordinates[0]}, Y: {coordinates[1]}
         </h2>
@@ -34,11 +30,8 @@ const Cube = () => {
           id="square"
           style={{ left: coordinates[0] + "px", top: coordinates[1] }}
         ></div>
-
       </div>
-
     </div>
-
   );
 };
 
